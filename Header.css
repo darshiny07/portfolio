@@ -1,0 +1,40 @@
+.Header_main{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(6, 11, 36);
+}
+
+.Header_left{
+    flex: 0.4;
+}
+
+.Header_left > h2{
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.Header_right {
+    display: flex;
+    flex: 0.6;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.Header_right >a >h4{
+    font-size: 20px;
+    cursor: pointer;
+    transform: transform 200ms ease-in-out;
+    padding: 6px 20px;
+    letter-spacing: 1px;
+}
+
+.Header_right >a >h4:hover{
+    transform: scale(1.09);
+    background-color: rgb(13, 130, 19);
+    padding: 6px 20px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
