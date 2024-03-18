@@ -1,17 +1,29 @@
-.Home_main{
+
+
+
+.Home_main {
     display: flex;
     align-items: center;
-    background-color: rgb(5, 14, 79);
+    justify-content: center;
+    padding: 90px; /* Add padding to center everything */
+    background-color: #14343e;
     color: white;
-}
-
-.Home_name{
-    flex: 0.4;
-}
-
-.Home_name > h1{
-    padding: 15px 0;
-    margin-left: 30%;
-    text-align: center;
-    letter-spacing: 1px;
-}
+  }
+  
+  .Home_name {
+    padding: 20px; /* Add padding to name container */
+    text-align: center; /* Center-align text */
+  }
+  
+  .profile {
+    padding: 20px; /* Add padding to profile container */
+  }
+  
+  .profile_img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid green;
+    box-shadow: 0 0 10px green;
+  }
+  
