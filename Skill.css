@@ -1,0 +1,72 @@
+.skill_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 0 ;
+}
+
+.skill_text{
+    flex: 0.3;
+    color: white;
+    text-align: left;
+    max-width: 500px;
+    padding-bottom: 20px;
+    /* background-color: #0F0F0F; */
+}
+
+.skill_img{
+    flex: 0.3;
+    margin-right: 10px; /* gap between*/
+    object-fit: contain;
+}
+
+.skillSet_slider1 > .MuiLinearProgress-root{
+    background-color: grey !important;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.skillSet_slider2> .MuiLinearProgress-root{
+    background-color: grey !important;
+    height: 8px;
+    border-radius: 5px;
+    
+}
+
+.skillSet_slider3> .MuiLinearProgress-root{
+    background-color: grey !important;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.skillSet_slider4> .MuiLinearProgress-root{
+    background-color: grey !important;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.skillContainer_skillSet{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    background-color: #0F0F0F;
+    
+}
+
+.skillContainer_skillSet >h5{
+padding-bottom: 7px;
+}
+
+/* backend style */
+
+.skill_text2{
+    flex: 0.3;
+    color: white;
+    text-align: left;
+    max-width: 500px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 80px;
+}
