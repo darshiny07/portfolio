@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     margin: 200px 0 ;
+   
 }
 
 .skill_text{
@@ -11,14 +12,32 @@
     text-align: left;
     max-width: 500px;
     padding-bottom: 20px;
-    /* background-color: #0F0F0F; */
 }
+
+
 
 .skill_img{
     flex: 0.3;
-    margin-right: 10px; /* gap between*/
+    margin-right: 10px; 
     object-fit: contain;
+    margin-top: 50px;
 }
+
+.skill_img > img{
+    border-radius: 60%;
+    border: 5px solid green;
+    box-shadow: 0 0 10px green;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill_img > img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    border-color: neon-green; /* Change border color on hover */
+    box-shadow: 0 0 20px neon-green; /* Apply a larger box shadow on hover */
+    transform: scale(1.1) rotateY(180deg);
+}
+
+
 
 .skillSet_slider1 > .MuiLinearProgress-root{
     background-color: grey !important;
@@ -54,8 +73,26 @@
     
 }
 
+
+.skillContainer_skillSet_bEnd{
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #0F0F0F;
+}
+
 .skillContainer_skillSet >h5{
 padding-bottom: 7px;
+}
+
+.skill_text > h3 {
+    padding: 5px;
+}
+
+.skillContainer_skillSet:hover {
+    background-color: #333; /* Change background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 /* backend style */
@@ -65,8 +102,51 @@ padding-bottom: 7px;
     color: white;
     text-align: left;
     max-width: 500px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
+    padding-top: 70px;
+    margin-bottom: 10px;
     padding-right: 50px;
     padding-left: 80px;
+}
+
+
+.skillContainer_skillSet_bEnd > h5{
+    padding-bottom: 25px;
+}
+
+.skill_text2 >h3{
+    padding: 5px;
+}
+
+
+
+.skillContainer_skillSet_bEnd:hover {
+    background-color: #333; /* Change background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.skill_header {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .skill_main {
+        flex-direction: column;
+    }
+    
+    .skill_img {
+        margin-top: 20px;
+    }
+    
+    .skill_text,
+    .skill_text2 {
+        flex: 1;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .skill_img {
+        flex: 1;
+    }
 }
