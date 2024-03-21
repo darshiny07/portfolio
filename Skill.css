@@ -1,152 +1,90 @@
-.skill_main{
+.skill_heading{
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    width: 100%; /* Ensure the header spans the full width */
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding-top: 50px;
+    
+}
+
+.full_Container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 200px 0 ;
-   
+    margin: 110px 0;
 }
 
-.skill_text{
-    flex: 0.3;
+.skillset_front{
+    flex: 0.5;
+    color: white;
+    text-align: left;
+    max-width: 500px; /*right left side width*/
+    margin-right: 100px;
+}
+
+.skillset_Back{
+    flex: 0.5;
     color: white;
     text-align: left;
     max-width: 500px;
-    padding-bottom: 20px;
 }
 
-
-
-.skill_img{
-    flex: 0.3;
-    margin-right: 10px; 
-    object-fit: contain;
-    margin-top: 50px;
-}
-
-.skill_img > img{
-    border-radius: 60%;
-    border: 5px solid green;
-    box-shadow: 0 0 10px green;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill_img > img:hover {
-    transform: scale(1.1); /* Scale up the image on hover */
-    border-color: neon-green; /* Change border color on hover */
-    box-shadow: 0 0 20px neon-green; /* Apply a larger box shadow on hover */
-    transform: scale(1.1) rotateY(180deg);
-}
-
-
-
-.skillSet_slider1 > .MuiLinearProgress-root{
-    background-color: grey !important;
-    height: 8px;
+.progress_bar .MuiLinearProgress-root{
+    background-color: gray;
     border-radius: 5px;
-}
-
-.skillSet_slider2> .MuiLinearProgress-root{
-    background-color: grey !important;
     height: 8px;
-    border-radius: 5px;
-    
 }
 
-.skillSet_slider3> .MuiLinearProgress-root{
-    background-color: grey !important;
-    height: 8px;
-    border-radius: 5px;
+.skill_item > h5{
+    padding: 10px;
 }
 
-.skillSet_slider4> .MuiLinearProgress-root{
-    background-color: grey !important;
-    height: 8px;
-    border-radius: 5px;
+ .skillset_front{
+    background-color: black;
+    padding: 20px;
+ }
+
+ .skill_item:hover,
+ .skill_item:hover .progress_bar {
+   background-color: #181616;
+   box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+
+ }
+
+ .skill_item,
+.progress_bar {
+  transition: background-color 0.5s ease; 
 }
+.skill_item {
+    margin-bottom: 20px; /* Adjust spacing between skill items */
+    padding-top: -8px; /* Normal padding top */
+    padding-bottom: 10px; /* Normal padding bottom */
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-.skillContainer_skillSet{
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15px;
-    background-color: #0F0F0F;
-    
-}
+  .skillset_front {
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5); /* Add neon light effect with box-shadow */
+  }
+  .skillset_front > h2{
+    padding-bottom: 10px;
+  }
+  
+ /* css for backend styling */
+ .skillset_Back{
+    background-color: black;
+    padding: 20px;
+ }
 
+ .skillset_Back {
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5); /* Add neon light effect with box-shadow */
+  }
 
-.skillContainer_skillSet_bEnd{
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    background-color: #0F0F0F;
-}
-
-.skillContainer_skillSet >h5{
-padding-bottom: 7px;
-}
-
-.skill_text > h3 {
-    padding: 5px;
-}
-
-.skillContainer_skillSet:hover {
-    background-color: #333; /* Change background color on hover */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-/* backend style */
-
-.skill_text2{
-    flex: 0.3;
-    color: white;
-    text-align: left;
-    max-width: 500px;
-    padding-bottom: 60px;
-    padding-top: 70px;
-    margin-bottom: 10px;
-    padding-right: 50px;
-    padding-left: 80px;
-}
-
-
-.skillContainer_skillSet_bEnd > h5{
-    padding-bottom: 25px;
-}
-
-.skill_text2 >h3{
-    padding: 5px;
-}
-
-
-
-.skillContainer_skillSet_bEnd:hover {
-    background-color: #333; /* Change background color on hover */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.skill_header {
-    text-align: center;
-    margin-bottom: 20px; /* Adjust the margin as needed */
-}
-/* Media queries */
-@media screen and (max-width: 768px) {
-    .skill_main {
-        flex-direction: column;
-    }
-    
-    .skill_img {
-        margin-top: 20px;
-    }
-    
-    .skill_text,
-    .skill_text2 {
-        flex: 1;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-    
-    .skill_img {
-        flex: 1;
-    }
-}
+  .skillset_Back > h2{
+    padding-bottom: 15px;
+  }
