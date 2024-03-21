@@ -1,29 +1,50 @@
-
-
-
 .Home_main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 130px; /* Add padding to center everything */
-    background-color: #232D3F;
-    color: white;
-  }
-  
-  .Home_name {
-    padding: 20px; /* Add padding to name container */
-    text-align: center; /* Center-align text */
-  }
-  
-  .profile {
-    padding: 20px; /* Add padding to profile container */
-  }
-  
-  .profile_img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 5px solid green;
-    box-shadow: 0 0 10px green;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 150px;
+  background-color: black;
+  color: white;
+}
+
+.Home_name {
+  flex: 0.5;
+  max-width: 500px;
+  padding-left: 10%; /* Add some spacing between text and image */
+  text-align: justify;
+}
+
+.profile {
+  flex: 0.5;
+  max-width: 500px;
+  padding-right: -10%;
+  text-align: centre; /* Align the image to the right */
+}
+
+.profile_img {
+  width: 60%; /* Adjust width of image */
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.2s ease; /* Transition effect */
+}
+
+/* Hover effect */
+.profile_img:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+/* Styling for text */
+.Home_name h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.Home_name h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.Home_name p {
+  font-size: 18px;
+  margin: 10px 0;
+}
