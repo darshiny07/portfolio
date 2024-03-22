@@ -1,0 +1,52 @@
+.Contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    padding: 20px;
+  }
+  
+  .Contact_info {
+    width: 45%;
+  
+    text-align: left;
+    margin-right: 20px; /* Add some space between contact info and image */
+  }
+  
+  .Contact_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .Contact_item a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .myProfile {
+    width: 35%;
+  }
+  
+  .myProfile img {
+    max-width: 100%;
+    border-radius: 5px;
+    width: 100%; /* Set the image width to 100% */
+  }
+  
+  h2 {
+    text-align: center;
+    width: 100%; /* Ensure the heading takes full width */
+    color: white;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .Contact_info, .myProfile {
+      width: 100%; /* Set both sections to take full width on smaller screens */
+      margin-right: 0; /* Remove margin between sections */
+    }
+  }
+  
