@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
 .Contact_container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; /* Allows items to wrap to the next line */
-    padding: 20px;
+    padding-top: 170px;
+    padding-bottom: 130px;
   }
   
   .Contact_info {
     width: 45%;
-  
     text-align: left;
     margin-right: 20px; /* Add some space between contact info and image */
   }
   
+  .Contact_info > h4{
+    color: white;
+    padding-bottom: 20px;
+  }
   .Contact_item {
     display: flex;
     align-items: center;
@@ -27,7 +33,7 @@
   }
   
   .myProfile {
-    width: 35%;
+    width: 25%;
   }
   
   .myProfile img {
