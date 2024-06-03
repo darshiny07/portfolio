@@ -5,7 +5,9 @@ import CallIcon from '@mui/icons-material/Call';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
 import myProfile from './profile.webp'
+// import myProfile from './contactPhoto.jpeg'
 import './Contact.css'
 function Contact() {
   return (
@@ -16,7 +18,7 @@ function Contact() {
   
     <h4>You can contact me via email, LinkedIn, or Instagram.</h4>
     <div className='Contact_item'>
-<EmailIcon/>
+<EmailIcon color='error'/>
 <a href="mailto:spriyadarshiny073@gmail.com">Email</a>
     </div>
 
@@ -32,12 +34,17 @@ function Contact() {
 
     <div className='Contact_item'>
 <InstagramIcon color='secondary'/>
-<a href="https://www.linkedin.com/in/priya-darshiny-s-/">Instagram</a>
+<a href="https://www.instagram.com/hajime__02?igsh=MXRiN2k3Ym9lMThkMg==">Instagram</a>
     </div>
 
     <div className='Contact_item'>
 <GitHubIcon/>
-<a href="https://www.linkedin.com/in/priya-darshiny-s-/">LinkedIn</a>
+<a href="https://github.com/darshiny07">Github</a>
+    </div>
+
+    <div className='Contact_item'>
+<DriveFolderUploadIcon color='warning'/>
+<a href="https://drive.google.com/file/d/1xOn2hh8nmw9CvrwkBUGjXpXF-xhzCPX1/view?usp=drivesdk">Resume</a>
     </div>
 </div>
 
