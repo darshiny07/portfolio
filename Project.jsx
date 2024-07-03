@@ -1,36 +1,42 @@
 import React from 'react';
 import './Project.css'
+import design from './static.png'
+import watch from './timer.png'
+import weather from './weather.png'
+import movie from './movie.png'
+import bill from './bill.png'
+
 import { Element } from 'react-scroll';
 const projects = [
     {
         title: 'Static fashion design website',
         description: 'A responsive website using Html ,css ,Boostrap',
-        link: 'https://example.com/project1',
-        image: 'https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg'
+        link: 'https://quiet-toffee-98472d.netlify.app/',
+        image: design
     },
     {
         title: 'Stop Watch Timer',
         description: 'The timer contain stop,start and reset funtion by using Javascript',
-        link: 'https://example.com/project2',
-        image: 'https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg'
+        link: 'https://dancing-marshmallow-bd6ae0.netlify.app/',
+        image: watch
     },
     {
         title: 'Bill Store Application',
         description: 'Storing bill details in local Storage by usuing React Js',
-        link: 'https://example.com/project2',
-        image: 'https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg'
+        link: 'https://app.netlify.com/sites/super-valkyrie-7fa3ee/overview',
+        image : bill
     },
     {
         title: 'Movie watched List',
         description: 'You add your custom watched movies title,image your point of rating summary',
-        link: 'https://example.com/project2',
-        image: 'https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg'
+        link: 'https://delicate-biscochitos-d54a77.netlify.app/',
+        image: movie
     },
     {
         title: 'Weather app',
         description: 'Fetching data from Api using axios build in React Js',
-        link: 'https://example.com/project2',
-        image: 'https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg'
+        link: 'https://beautiful-sorbet-40e2d8.netlify.app/',
+        image: weather
     }
 ];
 
