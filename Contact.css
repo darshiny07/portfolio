@@ -37,9 +37,10 @@
   }
   
   .myProfile img {
-    max-width: 100%;
-    border-radius: 5px;
-    width: 100%; /* Set the image width to 100% */
+    /* max-width: 100%; */
+    border-radius: 30%;
+    width: 100%; 
+  
   }
   
   h2 {
