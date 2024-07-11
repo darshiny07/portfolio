@@ -8,6 +8,7 @@
   padding-bottom: 130px;
   background-color: #232d3f;
   color: white;
+  
 }
 
 .Home_name {
@@ -39,6 +40,8 @@
 /* Hover effect */
 .profile_img:hover {
   transform: scale(1.1); /* Scale up the image on hover */
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+
 }
 
 /* Styling for text */
